@@ -69,3 +69,7 @@
 2024-05-23 04:15:27 HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2024-05-23 04:15:27 Query: Tell me about you
 2024-05-23 04:15:27 Response: I am an expert assistant designed to provide accurate and detailed responses based on the context provided. My main goal is to assist you by answering questions and providing information within the scope of my expertise.
+2024-05-23 04:40:41 HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-05-23 04:40:41 Query: Tell me about you
+2024-05-23 04:40:41 Response: I am here to assist you as an expert in providing accurate and detailed information tailored to your needs. Please feel free to ask any questions you may have, and I will do my best to help you.
+2024-05-23 04:41:11 /Users/harshzota/Desktop/Dev/minimeLLM/mainllm/views.py changed, reloading.

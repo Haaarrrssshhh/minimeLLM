@@ -6,31 +6,19 @@ from .singleton import EmbeddingManager
 from openai import OpenAI
 import os
 from dotenv import load_dotenv
-import logging
-from datetime import datetime
+
+
 
 load_dotenv()
-
-# Function to get log file path
-def get_log_file_path():
-    log_dir = os.path.join(os.path.dirname(__file__), 'logs')
-    if not os.path.exists(log_dir):
-        os.makedirs(log_dir)
-    return os.path.join(log_dir, datetime.now().strftime("%m-%d-%Y") + '.log')
-
-# Configure logging
-logging.basicConfig(
-    filename=get_log_file_path(),
-    level=logging.INFO,
-    format='%(asctime)s %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S'
-)
+    
 
 def handle_query(query):
     embedding_manager = EmbeddingManager.get_instance()
     query_embedding = embedding_manager.model.encode([query])[0].tolist()
+    # print(query_embedding, "Query embedding")  # Debug statement
 
     results = embedding_manager.query_embedding(query_embedding)
+    # print(results, "Query results")  # Debug statement
 
     if results["metadatas"]:
         most_similar_paragraph = results["metadatas"][0][0]["paragraph"]
@@ -41,33 +29,21 @@ def handle_query(query):
 def generate_response(query):
     retrieved_info = handle_query(query)
     print(retrieved_info,"retrieved_info")
-    prompt = (
-        "You are an expert assistant. Use the provided context to answer the question accurately and in detail.\n\n"
-        f"Context: {retrieved_info}\n\n"
-        f"Question: {query}\n\n"
-        "Answer in a clear and concise manner, keeping the response relevant to the context."
-    )
-    
+    prompt = f"Question: {query.lower()}\n\nContext: {retrieved_info.lower()}"
     messages = [
-        {"role": "system", "content": "You are an expert assistant. Provide accurate and detailed responses based on the given context."},
+        {"role": "system", "content": "You are this person whose information is given to you. Answer in first person always and keep your replies short up to 3-5 sentences. If you cannot find an appropriate answer, say, I cannot share this information with you!"},
         {"role": "user", "content": prompt}
     ]
     api_key = os.getenv('OPENAI_API_KEY')
+    print(api_key, "API KEY")  # Debug statement
     client = OpenAI(
         api_key=api_key,
     )
     completion = client.chat.completions.create(
-        messages=messages,
-        model="gpt-3.5-turbo",
-        max_tokens=150
-    )
-    response = completion.choices[0].message.content
-
-    # Log the query and response
-    logging.info(f"Query: {query}")
-    logging.info(f"Response: {response}")
-
-    return response
+    messages=messages,
+    model="gpt-3.5-turbo",
+)
+    return (completion.choices[0].message.content)
 
 class QueryView(APIView):
     def post(self, request, format=None):
