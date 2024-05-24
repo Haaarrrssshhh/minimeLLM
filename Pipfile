@@ -12,6 +12,7 @@ openai = "*"
 faiss-cpu = "*"
 chromadb = "*"
 python-dotenv = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 
