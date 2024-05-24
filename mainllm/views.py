@@ -2,40 +2,41 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .singleton import EmbeddingManager
 from openai import OpenAI
 import os
 from dotenv import load_dotenv
-
+from .chromadb_client import get_collection
 
 
 load_dotenv()
+
+
     
 
 def handle_query(query):
-    embedding_manager = EmbeddingManager.get_instance()
-    query_embedding = embedding_manager.model.encode([query])[0].tolist()
-    # print(query_embedding, "Query embedding")  # Debug statement
+    collection = get_collection()
+    results = collection.query(
+        query_texts=[query],
+        n_results=5,
+        include=['documents', 'distances', 'metadatas']
+    )
 
-    results = embedding_manager.query_embedding(query_embedding)
-    # print(results, "Query results")  # Debug statement
 
-    if results["metadatas"]:
-        most_similar_paragraph = results["metadatas"][0][0]["paragraph"]
-        return most_similar_paragraph
-    else:
-        return "No similar paragraph found."
+    return results['documents']
+
+
+
 
 def generate_response(query):
     retrieved_info = handle_query(query)
     print(retrieved_info,"retrieved_info")
-    prompt = f"Question: {query.lower()}\n\nContext: {retrieved_info.lower()}"
+    prompt = f"Question: {query.lower()}\n\nContext: {retrieved_info}"
     messages = [
         {"role": "system", "content": "You are this person whose information is given to you. Answer in first person always and keep your replies short up to 3-5 sentences. If you cannot find an appropriate answer, say, I cannot share this information with you!"},
         {"role": "user", "content": prompt}
     ]
     api_key = os.getenv('OPENAI_API_KEY')
-    print(api_key, "API KEY")  # Debug statement
+    # print(api_key, "API KEY")  # Debug statement
     client = OpenAI(
         api_key=api_key,
     )

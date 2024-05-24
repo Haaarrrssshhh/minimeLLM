@@ -7,5 +7,5 @@ class MainllmConfig(AppConfig):
 
     def ready(self):
         print("here 1")
-        from .signals import initialize_embeddings
-        initialize_embeddings()
+        from .chromadb_client import chromadbclient
+        chromadbclient()

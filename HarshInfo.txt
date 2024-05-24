@@ -10,23 +10,12 @@ Turns out next few days I call all of them and it turns out my friends are no di
 That being said the plan comes into motion. We did go. turns out a mix and match is not so bad you see. We bonded with each other so much. Drunk nights blurry lights in reality. Clubbing by 1 and beach by 2 , sunrise at the beach by 5am. Not too bad for a trip everyone was unsure about. Bike rides and not to forget the Auroville Ashram, where we sat and meditated. The highlight of the trip being the kayaking in the Backwater and mangroves. Well turns out the best 4 days of my life , when we got back I did record everyone's reaction and at times I do see that video and it just warms me in this cold winter in California.
 
 
-
-
-
-
-
-
-
-
-
 Biggest Achievement- 
 Personal - My personal biggest achievement was going into good shape. I was fat due to hereditary as my dad was too. I lacked personality and was extremely introvert because of the same. Making friends was difficult and talking to people too. Then came my engineering where my life turned, I went from a whopping 97kgs to 70kgs, a major loss in weight , which brought not only gain in muscle but also in personality and then I became a major extrovert.
 Academic - My biggest academic achievement was when I published my first research paper.
 That was hours and hours of research, testing and then finalising a paper.
 
-
 Educational Background - 
-
 
 HighSchool - K.C College, Mumbai India, Grade A , Distinction . June 2015-June 2017
 Undergraduate - University of Mumbai,Bachelor of Engineering, Majors in Computer Science. GPA - 3.56. July 2017 - June 2021
@@ -53,15 +42,8 @@ Spearheaded development of RealX, integrated national ID verification API, gRPC 
 
 
 
-
-
-
-
-
 Frugal Innovation Hub (SCU) - Software Engineer, October 2023 - Present , Santa Clara, CA, USA
 I work here as a Software Engineer. Although being here for a short period of time, I have been able to contribute a lot due to my vast experience in the past. I worked on Equation 2 Success , which is a project for students to report bullying or any such cases in school. I was responsible for refactoring the whole codebase to a repository development pattern , which is really useful for a plug-n-play kind of development. Among other things I was also responsible for deploying the backend on AWS EC2 server for seamless user experience. For easy and seamless development I also employed CI/CD pipelines.
-
-
 
 
 Academic Achievements
@@ -85,10 +67,6 @@ Another paper I wrote was
 It was also my final year project.
 
 
-
-
-
-
 Projects
 Although I have done many projects, I would like to highlight a few main ones, which also defines my journey in LLM and AI
 
@@ -106,6 +84,5 @@ The "MiniME - Personalized Chatbot for Self-Introduction" project involves devel
 The model development phase involves selecting and fine-tuning a suitable transformer model, followed by rigorous evaluation using metrics like perplexity and BLEU scores, along with user feedback. The chatbot is deployed using a Flask web application, with RESTful APIs handling user queries and Docker ensuring scalability. This project effectively combines NLP techniques and machine learning to create a personalized, interactive chatbot for self-introduction, enhancing user engagement and providing accurate information.
 
 Sentinex AI - The "SentixAI - Sentiment Tracker for Personal Notes" project involved developing a sentiment analysis tool integrated into a personal notes application using natural language processing (NLP) and a fine-tuned BERT model. The project began with collecting and preprocessing personal notes and sentiment-labeled datasets, followed by fine-tuning a pre-trained BERT model to achieve 80% accuracy in sentiment classification. The sentiment tracker was implemented into the application to analyze user notes in real-time, providing sentiment scores (positive, negative, or neutral). 
-
 
 The system's deployment involved creating a Flask API and using Docker for scalability. The impact of the sentiment tracker was quantified through user surveys, revealing a 30% increase in self-awareness among users, who reported gaining valuable insights into their emotional well-being. This project effectively combined advanced NLP techniques and user feedback to enhance self-awareness and emotional intelligence.
