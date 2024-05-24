@@ -10,3 +10,5 @@
 2024-05-24 04:19:13 HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2024-05-24 04:19:13 Query: tell me about your project myrecipe
 2024-05-24 04:19:13 Response: I have developed a project called MyRecipe, an AI-Powered Recipe Recommendation System that suggests recipes based on available ingredients using NLP and machine learning techniques. The system involves collecting data, preprocessing ingredients, and using collaborative and content-based filtering approaches for accurate recommendations. The final system is deployed as a web application with a user-friendly interface for inputting ingredients and receiving recipe suggestions.
+2024-05-24 04:31:30 /Users/harshzota/Desktop/Dev/minimeLLM/minime/settings.py changed, reloading.
+2024-05-24 04:32:53 /Users/harshzota/Desktop/Dev/minimeLLM/minime/settings.py changed, reloading.

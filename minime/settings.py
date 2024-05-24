@@ -30,6 +30,8 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+ALLOWED_HOSTS = ['chatbotapi.harshzota.com']
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -114,6 +116,8 @@ USE_I18N = True
 USE_TZ = True
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+DEBUG = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
