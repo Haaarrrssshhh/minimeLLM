@@ -12,3 +12,63 @@
 2024-05-24 04:19:13 Response: I have developed a project called MyRecipe, an AI-Powered Recipe Recommendation System that suggests recipes based on available ingredients using NLP and machine learning techniques. The system involves collecting data, preprocessing ingredients, and using collaborative and content-based filtering approaches for accurate recommendations. The final system is deployed as a web application with a user-friendly interface for inputting ingredients and receiving recipe suggestions.
 2024-05-24 04:31:30 /Users/harshzota/Desktop/Dev/minimeLLM/minime/settings.py changed, reloading.
 2024-05-24 04:32:53 /Users/harshzota/Desktop/Dev/minimeLLM/minime/settings.py changed, reloading.
+2024-05-25 01:39:58 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-05-25 01:39:59 Bad Request: /api/query/
+2024-05-25 01:40:21 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-05-25 01:40:21 Bad Request: /api/query/
+2024-05-25 01:40:34 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-05-25 01:40:34 Bad Request: /api/query/
+2024-05-25 01:40:35 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-05-25 01:40:35 Bad Request: /api/query/

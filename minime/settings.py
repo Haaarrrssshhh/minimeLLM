@@ -25,12 +25,9 @@ SECRET_KEY = 'django-insecure-q@xvjs8r2j54352l#(i7ok6^*j(%x!&*i6(r_ilqphy9cfm9y@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-
 # Application definition
 
-ALLOWED_HOSTS = ['chatbotapi.harshzota.com']
+ALLOWED_HOSTS = ['chatbotapi.harshzota.com','127.0.0.1']
 
 INSTALLED_APPS = [
     'django.contrib.admin',

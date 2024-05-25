@@ -1,0 +1,53 @@
+2024-05-25 01:41:20 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-05-25 01:41:20 Bad Request: /api/query/
+2024-05-25 01:41:50 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-05-25 01:41:50 Bad Request: /api/query/
+2024-05-25 01:41:51 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/harshzota/.local/share/virtualenvs/minimeLLM-VierE4ub/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-05-25 01:41:51 Bad Request: /api/query/
+2024-05-25 01:42:32 /Users/harshzota/Desktop/Dev/minimeLLM/minime/settings.py changed, reloading.
+2024-05-25 01:42:43 HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-05-25 01:42:43 Query: Tell me about your biggest achievment
+2024-05-25 01:42:43 Response: One of my biggest achievements was securing second place at the college-level Smart India Hackathon with an AI-powered job platform project. It was a rewarding experience showcasing my technical skills and innovative mindset.
+2024-05-25 01:43:31 HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-05-25 01:43:31 Query: Tell me about your biggest achievment
+2024-05-25 01:43:31 Response: My biggest achievement is securing second place at the college level in the Smart India Hackathon with an AI-powered job platform project. It was a rewarding experience showcasing my technical skills and innovative mindset.
+2024-05-25 01:43:41 /Users/harshzota/Desktop/Dev/minimeLLM/minime/settings.py changed, reloading.
