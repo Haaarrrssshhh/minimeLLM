@@ -27,7 +27,7 @@ DEBUG = True
 
 # Application definition
 
-ALLOWED_HOSTS = ['chatbotapi.harshzota.com','127.0.0.1']
+ALLOWED_HOSTS = ['chatbotapi.harshzota.com','127.0.0.1','0.0.0.0','localhost']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-ROOT_URLCONF = 'llmapp.urls'
+ROOT_URLCONF = 'main.urls'
 
 TEMPLATES = [
     {
@@ -114,7 +114,7 @@ USE_TZ = True
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-DEBUG = False
+# DEBUG = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/

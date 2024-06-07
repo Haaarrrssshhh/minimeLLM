@@ -2,6 +2,8 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from django.views.decorators.csrf import csrf_exempt
+from django.utils.decorators import method_decorator
 from openai import OpenAI
 import os
 from datetime import datetime
@@ -63,6 +65,9 @@ def generate_response(query):
     logging.info(f"Response: {response}")
     return response
 
+
+
+@method_decorator(csrf_exempt, name='dispatch')
 class QueryView(APIView):
     def post(self, request, format=None):
         user_query = request.data.get('query')
