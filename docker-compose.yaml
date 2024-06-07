@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   backend:
+    image: harshzota/minime-llm-server:latest
     build: 
       context: .
       dockerfile: Dockerfile
@@ -12,3 +13,4 @@ services:
       - .:/app
     ports:
       - "8000:8000"
+  
