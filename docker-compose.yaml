@@ -1,16 +1,14 @@
-version: '3'
+version: '3.8'
+
 services:
-  
   backend:
     build: 
       context: .
       dockerfile: Dockerfile
     container_name: minime-llm-server
-    command: gunicorn --bind 0.0.0.0:8000 myproject.wsgi:application
+    command: gunicorn --bind 0.0.0.0:8000 main.wsgi:application
     restart: always
     volumes:
       - .:/app
     ports:
       - "8000:8000"
-volumes:
-  data:
