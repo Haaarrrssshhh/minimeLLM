@@ -22,7 +22,6 @@ Before you begin, ensure you have the following:
 1. **Clone the repository:**
    ```sh
    git clone https://github.com/Haaarrrssshhh/minimeLLM.git
-   cd your-repo-name
    ```
 
 ## Environment Setup
