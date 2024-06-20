@@ -140,16 +140,11 @@ __pycache__/
 
 # Ignore virtual environment directories
 venv/
-venv_3_12/
-
 # Ignore ChromaDB and other binary files
 *.bin
 
 # Ignore pem files
 *.pem
-
-# Ignore requirement files
-requirements.txt
 
 # Ignore pem files
 *.pem
