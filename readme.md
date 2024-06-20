@@ -21,7 +21,7 @@ Before you begin, ensure you have the following:
 ## Installation
 1. **Clone the repository:**
    ```sh
-   git clone [GithubLink](https://github.com/Haaarrrssshhh/minimeLLM.git)
+   git clone https://github.com/Haaarrrssshhh/minimeLLM.git
    cd your-repo-name
    ```
 
