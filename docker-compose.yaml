@@ -2,11 +2,11 @@ version: '3.8'
 
 services:
   backend:
-    image: harshzota/minime-llm-server:latest
+    image: harshzota/mychatbot-image:latest
     build: 
       context: .
       dockerfile: Dockerfile
-    container_name: minime-llm-server
+    container_name: mychatbot-image
     command: gunicorn --bind 0.0.0.0:8000 main.wsgi:application
     restart: always
     volumes:

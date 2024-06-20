@@ -1,6 +1,5 @@
 import csv
 import chromadb
-from sentence_transformers import SentenceTransformer
 from chromadb.utils import embedding_functions
 
 # Module-level variables
